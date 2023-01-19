@@ -1,0 +1,21 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(
+  90deg,
+  #241783,
+  #3b2099 30.6%,
+  #652ac3 63.02%,
+  #7534c3 80.21%,
+  #813ccb 89.58%,
+  #a350e0
+);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+
+@import "global";
+@import "nav-hero";
+
