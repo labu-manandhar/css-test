@@ -69,6 +69,7 @@ button:hover {
   background: linear-gradient(90deg, #241783, #3b2099 30.6%, #652ac3 63.02%, #7534c3 80.21%, #813ccb 89.58%, #a350e0);
   position: -webkit-sticky;
   position: sticky;
+  top: 0px;
   z-index: 10;
 }
 
@@ -145,7 +146,7 @@ nav ul {
 
 .feature-card {
   text-align: left;
-  flex: 1 1 25rem;
+  flex: 1 1 45rem;
   min-height: 10vh;
   align-items: center;
   justify-content: center;
@@ -158,4 +159,49 @@ nav ul {
 
 .f-card3 {
   border: none;
+}
+
+/* services section */
+.services-section {
+  min-height: 70vh;
+}
+
+.service-head {
+  text-align: center;
+}
+.service-head h2 {
+  margin: 8rem 5rem 2rem 5rem;
+}
+.service-head p {
+  margin: 0rem 5rem 4rem 5rem;
+}
+
+.services {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  text-align: center;
+  flex: 1 1 40rem;
+  min-height: 40vh;
+  margin: 2rem 1rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.service img {
+  max-width: 10%;
+  margin: 1rem;
+}
+.service h3, .service p {
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+.service-icon {
+  background: #a350e0;
+  border-radius: 20px 20px 0px 0px;
 }/*# sourceMappingURL=style.css.map */
