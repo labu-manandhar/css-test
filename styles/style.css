@@ -11,6 +11,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  -webkit-animation: startFlash 1s ease-in-out forwards;
+          animation: startFlash 1s ease-in-out forwards;
 }
 
 h1 {
@@ -24,7 +26,7 @@ label,
 input,
 a,
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h2 {
@@ -65,6 +67,23 @@ button:hover {
   background: #a12879;
 }
 
+/* Animations */
+@-webkit-keyframes startFlash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes startFlash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .main-head {
   background: linear-gradient(90deg, #241783, #3b2099 30.6%, #652ac3 63.02%, #7534c3 80.21%, #813ccb 89.58%, #a350e0);
   position: -webkit-sticky;
@@ -187,7 +206,7 @@ nav ul {
 .service {
   text-align: center;
   flex: 1 1 40rem;
-  min-height: 40vh;
+  min-height: 35vh;
   margin: 2rem 1rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;

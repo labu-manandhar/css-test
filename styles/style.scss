@@ -2,7 +2,7 @@ $header1: 3.5rem;
 $header2: 4rem;
 $header3: 2.5rem;
 $header4: 2rem;
-$text: 2rem;
+$text: 1.8rem;
 $gradient: linear-gradient(
   90deg,
   #241783,
@@ -18,5 +18,6 @@ $gray-text: #2c2c2c;
 
 @import "global";
 @import "nav-hero";
-@import "feature-services"
+@import "feature-services";
+@import "middle";
 

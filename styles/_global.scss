@@ -11,6 +11,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  animation: startFlash 1s ease-in-out forwards;
 }
 
 h1 {
@@ -57,4 +58,14 @@ button {
 }
 button:hover {
   background: #a12879;
+}
+/* Animations */
+
+@keyframes startFlash{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
