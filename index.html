@@ -59,7 +59,7 @@
             development,<br />
             and digital marketing solutions
           </p>
-          <div class="button-wrap">
+          <div class="button-wrap-hero">
             <button class="hero-button">GET STARTED</button>
           </div>
         </div>
@@ -232,8 +232,10 @@
       </section>
       <section class="academy-section">
         <div class="left-column">
-          <h2>Shape your Career in IT & Accounting with our Job Ready Program</h2>
-          <p>
+          <h2>
+            Shape your Career in IT & Accounting with our Job Ready Program
+          </h2>
+          <p class="academy-desc-left">
             Developed by experts of the industry, the academic IT & Accounting
             courses under our Job Ready Program equip you with a strong
             foundation within the sector, enabling you to open new career
@@ -276,36 +278,60 @@
                 Our competent academic IT Job Ready courses, paired with career counseling services, are specially curated to artfully facilitate candidates in securing a broad range of advantageous job opportunities within the related sector.
               </p>
             </div>
+          
           </div>
+
           
         </div>
         <div class="right-column">
           <div class="academy-img">
-            <img src="./img/academy.png" alt="academy">
+            <img src="./img/academy.png" alt="academy" />
           </div>
-          <p>Comprising talented team members and industry experts as your trainers and mentors, our IT job ready program aims to bridge the gap that exists between the supply of talent and the industry demand.</p>
+          <p>
+            Comprising talented team members and industry experts as your
+            trainers and mentors, our IT job ready program aims to bridge the
+            gap that exists between the supply of talent and the industry
+            demand.
+          </p>
           <h3>Start your <span>career</span> right away!</h3>
           <button>JOB READY PROGRAMME</button>
         </div>
       </section>
       <section class="testimonial-section">
-        <div class="testimonial-head">
-          <h2>What our Clients say about Extratech</h2>
-          <p>Over 500+ Clients , Students and Growing</p>
-        </div>
-        <div class="testimonial-body">
-          <div class="img-wrap">
-            <img src="./img/client-photo.png" alt="client">
+        <div class="testimonial-wrap">
+          <div class="testimonial-head">
+            <h2>What our Clients say about Extratech</h2>
+            <p>Over 500+ Clients , Students and Growing</p>
           </div>
-          <div class="testimonial-column">
-            <p>May I take this opportunity to thank you for all your help in the arrangements and organization for the in house training some of our employees attended. The course was very informative and structured to our requirements. I feel that the relationship that has been built up with the Institute of Export has been both fruitful and supportive. Your help and knowledge has been very much appreciated over the years and may that continue long into the future.</p>
-            <p>Lok Raj Ghimire</p>
-            <p>Manager | Consoltica Pvt. Ltd</p>
+          <div class="testimonial-body">
+            <div class="img-wrap">
+              <img src="./img/client-photo.png" alt="client" />
+            </div>
+            <div class="testimonial-column">
+              <p class="testimonial-text">
+                May I take this opportunity to thank you for all your help in the
+                arrangements and organization for the in house training some of
+                our employees attended. The course was very informative and
+                structured to our requirements. I feel that the relationship that
+                has been built up with the Institute of Export has been both
+                fruitful and supportive. Your help and knowledge has been very
+                much appreciated over the years and may that continue long into
+                the future.
+              </p>
+              <div class="test-name">
+              <p>Lok Raj Ghimire</p>
+              <p>Manager | Consoltica Pvt. Ltd</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="button-wrap">
+            <button>View More</button>
           </div>
         </div>
-        <button>View More</button>
+        
       </section>
-      <section class="blog-insight-section">
+<!--       <section class="blog-insight-section">
         <h2>Extratech Insights</h2>
         <div class="blog-card">
           <h4>Social Media Marketing tips for your business</h4>
@@ -320,23 +346,29 @@
           <h4>Why infographics are so effective?</h4>
         </div>
         <button>View More</button>
-      </section>
+      </section> -->
       <section class="callback-section">
-        <h2>Request a Call Back</h2>
-        <p>We would love to get in touch with you! Please fill in the section below for your queries, and we shall promptly get back to you.</p>
+        <header class="callback-head">
+          <h2>Request a Call Back</h2>
+          <p>
+            We would love to get in touch with you! Please fill in the section below for your queries, and we shall promptly get back to you.
+          </p>
+        </header>
+        
         <div class="academy-service">
           <button>Academy</button>
           <button>Service</button>
         </div>
         <form>
-          <div class="input-line">
-            <input type="text" id="name" placeholder="Full Name" name="name">
-          <input type="email" id="email" placeholder="Email" name="email">
+          <div class="row-input">
+            <input class="input-group" type="text" id="name" placeholder="Full Name" name="name" />
+            <input class="input-group" type="email" id="email" placeholder="Email" name="email" />
           </div>
-         
-          <div class="input-line">
-            <input type="text" id="phone" placeholder="Phone" name="phone">
-            <select name="courses" id="courses" placeholder="Courses">
+
+          <div class="row-input">
+            <input class="input-group" type="text" id="phone" placeholder="Phone" name="phone" />
+            <select class="input-group" name="courses" id="courses" required>
+              <option value="" hidden>Courses</option>
               <option value="1">Network & System Support</option>
               <option value="2">Data Analytics</option>
               <option value="3">Web Development (PHP Laravel)</option>
@@ -346,85 +378,135 @@
               <option value="7">Accounting</option>
               <option value="8">Advance Network Engineering</option>
             </select>
-            <select name="state" id="state" placeholder="State">
-              <option value="Australian Capital Territory">Australian Capital Territory</option>
+            <select class="input-group" name="state" id="state">
+              <option value="" hidden>State</option>
+              <option value="Australian Capital Territory">
+                Australian Capital Territory
+              </option>
               <option value="New South Wales">New South Wales</option>
               <option value="Northern Territory">Northern Territory</option>
               <option value="Queensland">Queensland</option>
             </select>
           </div>
-          <div class="input-line">
-            <textarea id="textmessage" rows="3" placeholder="Message" name="textmessage"></textarea>
+          <div class="row-input">
+            <textarea class="input-group"
+              id="textmessage"
+              rows="3"
+              placeholder="Message"
+              name="textmessage"
+            ></textarea>
+          </div>
+          <div class="callback-button">
+            <button type="submit">Submit</button>
           </div>
           
-          <button type="submit">Submit</button>
         </form>
       </section>
       <section class="location-section">
-        <div class="address-col">
-          <div class="address-card">
-            <div class="location-img-head">
-              <img src="./img/l1-sydney.png" alt="Sydney">
+        <div class="location-wrap">
+          <div class="address-col">
+            <div class="address-card">
+              <div class="location-img-head">
+                <img src="./img/l1-sydney.png" alt="Sydney" />
+              </div>
+              <div class="location-text">
+                <p>Sydney</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Suite 132 & 133, Level 3,
+                10 Park Road, Hurstville NSW 2220
+              </p>
+              </div>
+              
             </div>
-            <p>Sydney</p>
-            <p><i class="fa-solid fa-location-dot"></i> Suite 132 & 133, Level 3, 10 Park Road, Hurstville NSW 2220</p>
-          </div>
-
-          <div class="address-card">
-            <div class="location-img-head">
-              <img src="./img/l2-canberra.png" alt="Canberra">
+  
+            <div class="address-card">
+              <div class="location-img-head">
+                <img src="./img/l2-canberra.png" alt="Canberra" />
+              </div>
+              <div class="location-text">
+              <p>Canberra</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> 7/3 Pirie Street,
+                Fyshwick ACT 2609
+              </p>
+             </div>
             </div>
-            <p>Canberra</p>
-            <p><i class="fa-solid fa-location-dot"></i> 7/3 Pirie Street, Fyshwick ACT 2609</p>
-          </div>
-
-          <div class="address-card">
-            <div class="location-img-head">
-              <img src="./img/l3-brisbane.png" alt="Brisbane">
+  
+            <div class="address-card">
+              <div class="location-img-head">
+                <img src="./img/l3-brisbane.png" alt="Brisbane" />
+              </div>
+              <div class="location-text">
+                <p>Brisbane</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Suites 7 level 3/141
+                Queen St, Brisbane City QLD 4000, Australia
+              </p>
+              </div>
+              
             </div>
-            <p>Brisbane</p>
-            <p><i class="fa-solid fa-location-dot"></i> Suites 7 level 3/141 Queen St, Brisbane City QLD 4000, Australia</p>
-          </div>
-
-          <div class="address-card">
-            <div class="location-img-head">
-              <img src="./img/l4-melbourne.png" alt="Melbourne">
+  
+            <div class="address-card">
+              <div class="location-img-head">
+                <img src="./img/l4-melbourne.png" alt="Melbourne" />
+              </div>
+              <div class="location-text">
+                <p>Melbourne</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> 2B/95 Bell Street, Coburg
+                VIC 3058
+              </p>
+              </div>
+              
             </div>
-            <p>Melbourne</p>
-            <p><i class="fa-solid fa-location-dot"></i> 2B/95 Bell Street, Coburg VIC 3058</p>
-          </div>
-
-          <div class="address-card">
-            <div class="location-img-head">
-              <img src="./img/l5-kathmandu.png" alt="Kathmandu">
+  
+            <div class="address-card">
+              <div class="location-img-head">
+                <img src="./img/l5-kathmandu.png" alt="Kathmandu" />
+              </div>
+              <div class="location-text">
+                <p>Kathmandu</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> 31 - Prayag Marga,
+                Kathmandu
+              </p>
+              </div>
+              
             </div>
-            <p>Kathmandu</p>
-            <p><i class="fa-solid fa-location-dot"></i> 31 - Prayag Marga, Kathmandu</p>
           </div>
+          <div class="contact-col">
+            <h3>Our Office</h3>
+            <p>We are excited to join you in your hometown</p>
+            <div class="contact-col-card">
+              <p>
+                <span>Sydney (Head Office)</span> <br />
+                02 9171 7742
+              </p>
+            </div>
+            <div class="contact-col-card">
+              <p> <span>Kathmandu</span> <br> +977 - 9865071394</p>
+            </div>
+  
+            <div class="contact-col-card">
+              <a href="mailto:info@extratechs.com.au">
+                <p>info@extratechs.com.au</p>
+              </a>
+            </div>
+          </div>
+        </section>
         </div>
-        <div class="contact-col">
-          <h3>Our Office</h3>
-          <p>We are excited to join you in your hometown</p>
-          <div class="contact-col-card">
-            <p>Sydney (Head Office) <br>
-              02 9171 7742</p>
-          </div>
-          <div class="contact-col-card">
-            <p>Kathmandu
-              +977 - 9865071394
-          </div>
-          <div class="contact-col-card">
-            <a href="mailto:info@extratechs.com.au">
-            <p>info@extratechs.com.au</p>
-            </a>
-          </div>
-        </div>
-      </section>
+       
       <section class="footer">
         <div class="footer-container">
           <div class="footer-desc">
-            <img src="./img/Extratech-Logo.png" alt="Extratech Logo">
-            <p>Extratech is an all-around Managed Service Provider (MSP), and purveyor of ICT Education, offering customized & personalized IT and digital performance, management, and education services. We provide the best Accounting  & IT Job Ready programs in Australia, Sydney, and Canberra.</p>
+            <img src="./img/Extratech-Logo.png" alt="Extratech Logo" />
+            <p>
+              Extratech is an all-around Managed Service Provider (MSP), and
+              purveyor of ICT Education, offering customized & personalized IT
+              and digital performance, management, and education services. We
+              provide the best Accounting & IT Job Ready programs in Australia,
+              Sydney, and Canberra.
+            </p>
           </div>
           <div class="footer-links">
             <h4>Services</h4>
@@ -475,13 +557,15 @@
               <i class="fa-brands fa-tiktok fa-xl"></i>
             </div>
           </div>
-
         </div>
         <div class="footer-bottom">
           <p>ABN Number: 99 631 450 210</p>
-          <p>Extratech  © 2021. All Rights Reserved.</p>
+          <p>Extratech © 2021. All Rights Reserved.</p>
           <p>Disclaimer | Privacy Policy | Feedback and Complaints</p>
-          <p>Designed & Developed By: <a href="https://extratechs.com.au/">Extratechs</a></p>
+          <p>
+            Designed & Developed By:
+            <a href="https://extratechs.com.au/">Extratechs</a>
+          </p>
         </div>
       </section>
     </main>
