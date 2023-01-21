@@ -13,7 +13,9 @@ $gradient: linear-gradient(
   #a350e0
 );
 $background-color: #154353;
+$background-burger: #241783;
 $gray-text: #2c2c2c;
+$burger-color: #a350e0;
 
 
 @import "global";
@@ -22,3 +24,72 @@ $gray-text: #2c2c2c;
 @import "middle";
 @import "footer";
 
+@media screen and (max-width:870px){
+  .burger{
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span{
+    padding: 0.2rem 2rem;
+    background: $burger-color;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+  nav a{
+    font-size: $header3;
+  }
+  .nav-links{
+    background: $background-burger;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease;
+  }
+  .nav-open {
+    transform: translateX(-100%);
+
+  }
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: $burger-color;
+
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: $burger-color;
+  } 
+  // .left-column h2{
+  //   margin-top: 3rem;
+  // }
+  
+  .services:nth-child(3){
+    margin-left: 3rem;
+  }
+  .project-section{
+    padding-bottom: 5rem;
+  }
+  .project-card{
+    margin-bottom: 4rem;
+  }
+  .right-column button{
+    margin-bottom: 4rem;
+  }
+  .testimonial-section button{
+    margin-bottom: 4rem;
+  }
+  .right-column,.left-column{
+    padding: 2rem;
+  }
+  .contact-col{
+    padding: 3rem;
+  }
+}

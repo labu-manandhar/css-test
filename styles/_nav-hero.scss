@@ -27,11 +27,18 @@ nav{
   
   ul{
     display: flex;
-    flex: 4 1 25rem;
+    flex: 4 1 40rem;
     justify-content: space-around;
     align-items: center;
+    li{
+      padding: 0rem 1rem;
+    }
+    
     
   }
+}
+.burger,.menu-check{
+  // display: none;
 }
 .hero{
   min-height: 90vh;
