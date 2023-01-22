@@ -655,6 +655,9 @@ nav ul li {
     transform: rotateZ(-45deg) translateY(-300%);
     background: #a350e0;
   }
+  .button-wrap-hero {
+    margin-bottom: 3rem;
+  }
   .services:nth-child(3) {
     margin-left: 3rem;
   }
